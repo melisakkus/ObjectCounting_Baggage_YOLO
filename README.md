@@ -22,13 +22,18 @@ pip install numpy
 ## 📁 Proje Yapısı
 
 ```
-ObjectCounting_Baggage_YOLO/
+ObjectCounting/
+├── .venv/                      # Sanal ortam
+├── images/
+│   └── reference_line.png      # Referans çizgisi için ilgili görüntü
 ├── models/
-│   └── yolo11n.pt              # YOLO model dosyası
+│   ├── yolo11n.pt              # YOLO 11 nano model dosyası
+│   └── yolov8n.pt              # YOLO v8 nano model dosyası
 ├── test_videos/
 │   └── baggage_carousel.mp4    # Test video dosyası
-├── object_counting.py          # Ana uygulama betiği
 ├── explainings.txt            # Proje açıklamaları
+├── get_coordinates.py         # Koordinat alma betiği
+├── object_counting.py         # Ana uygulama betiği
 └── README.md                  # Bu dosya
 ```
 
@@ -63,3 +68,8 @@ Sistem bavul tespiti için yapılandırılmıştır (COCO sınıf ID: 28), ancak
 6. Sayımı güncelle
 7. Sonuçları görüntüle
 
+### Çıktı Görselleri
+
+<img width="1246" height="1035" alt="output1" src="https://github.com/user-attachments/assets/fd18c15a-1f13-4155-b990-3334354fc111" />
+<img width="1252" height="1036" alt="output2" src="https://github.com/user-attachments/assets/5530ee13-dc51-4948-85ca-3621d911b56c" />
+<img width="1621" height="832" alt="output3" src="https://github.com/user-attachments/assets/84599d83-8e2b-4340-b115-bb8c5ba60b07" />
